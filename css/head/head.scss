@@ -1,0 +1,85 @@
+@import "../styles/styles.scss";
+
+body {
+    margin: 0 auto;
+}
+.hair {
+    background-color: #EFEFEF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    a {
+        font-family: $roboto;
+        font-size: 14px;
+        color: $dark;
+        text-decoration: none;
+        padding: 17px 30px 18px 30px;
+    }
+    a:hover {
+        background-color: $dark;
+        color: white;
+        transition: 0.4s;
+    }
+}
+
+.head {
+    @include flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    div {
+        @include flex;
+        align-items: center;
+    }
+
+    .logo p {
+        font-family: $roboto;
+        font-weight: 700;
+        font-size: 36px;
+        color: $pink;
+        margin: 0 0 0 20px;
+    }
+
+    .search {
+        background-color: #EFEFEF;
+        border-radius: 40px;
+        max-width: 240px;
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        margin-top: 16px;
+
+        input {
+            font-family: $roboto;
+            background-color: #EFEFEF;
+            border: none;
+            outline: none;
+            align-items: center;
+            font-size: 14px;
+            padding-left: 6px;
+        }
+    }
+
+    .contact {
+        p {
+            font-family: $roboto;
+            font-size: 16px;
+            margin-right: 40px;
+        }
+
+        a {
+            display: block;
+            border: 2px solid $pink;
+            text-decoration: none;
+            font-family: $roboto;
+            color: $black;
+            border-radius: 40px;
+            padding: 12px 26px 13px 27px;
+        }
+        a:hover {
+            background-color: $pink;
+            transition: 0.4s;
+        }
+    }
+}

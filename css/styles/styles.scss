@@ -1,0 +1,11 @@
+$roboto: 'Roboto', sans-serif;
+
+$dark: #333333;
+$pink: #F13C6E;
+$black: #000000;
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+
+}
