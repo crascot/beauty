@@ -1,11 +1,17 @@
-$roboto: 'Roboto', sans-serif;
-
-$dark: #333333;
-$pink: #F13C6E;
 $black: #000000;
+$dark: #333333;
+$gray: #EFEFEF;
+$pink: #F13C6E;
 
 @mixin flex {
     display: flex;
     flex-wrap: wrap;
+}
 
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
 }

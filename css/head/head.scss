@@ -4,16 +4,14 @@ body {
     margin: 0 auto;
 }
 .hair {
-    background-color: #EFEFEF;
+    background-color: $gray;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
     a {
-        font-family: $roboto;
         font-size: 14px;
         color: $dark;
-        text-decoration: none;
         padding: 17px 30px 18px 30px;
     }
     a:hover {
@@ -25,8 +23,9 @@ body {
 
 .head {
     @include flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
+    border-bottom: 1px solid $gray;
 
     div {
         @include flex;
@@ -34,7 +33,6 @@ body {
     }
 
     .logo p {
-        font-family: $roboto;
         font-weight: 700;
         font-size: 36px;
         color: $pink;
@@ -42,17 +40,17 @@ body {
     }
 
     .search {
-        background-color: #EFEFEF;
+        background-color: $gray;
         border-radius: 40px;
         max-width: 240px;
         width: 100%;
         height: 30px;
-        padding: 10px;
-        margin-top: 16px;
-
+        padding: 5px;
+        padding-left: 20px;
+        margin: 20px 93px 0 172px;
+        
         input {
-            font-family: $roboto;
-            background-color: #EFEFEF;
+            background-color: $gray;
             border: none;
             outline: none;
             align-items: center;
@@ -63,7 +61,6 @@ body {
 
     .contact {
         p {
-            font-family: $roboto;
             font-size: 16px;
             margin-right: 40px;
         }
@@ -71,14 +68,73 @@ body {
         a {
             display: block;
             border: 2px solid $pink;
-            text-decoration: none;
-            font-family: $roboto;
             color: $black;
             border-radius: 40px;
             padding: 12px 26px 13px 27px;
         }
         a:hover {
             background-color: $pink;
+            transition: 0.4s;
+        }
+    }
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+        font-weight: 700;
+        color: $black;
+        padding: 30px 40px;
+    }
+
+    a:hover {
+        background-color: $dark;
+        color: white;
+        transition: 0.4s;
+    }
+}
+
+.super-chair {
+    background-image: url(../../image/bg_super_chair.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 604px;
+
+    div * {
+        color: white;
+    }
+    div {
+        line-height: 50px;
+        max-width: 308px;
+        min-width: 108px;
+        position: relative;
+        left: 405px;
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        a {
+            display: block;
+            border: 2px solid white;
+            text-align: center;
+            border-radius: 40px;
+            max-width: 170px;
+            height: 40px;
+            padding-bottom: 6px;
+            margin-top: 40px;
+        }
+        a:hover {
+            background-color: white;
+            color: $dark;
             transition: 0.4s;
         }
     }
