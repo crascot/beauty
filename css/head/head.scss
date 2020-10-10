@@ -17,7 +17,8 @@ body {
     a:hover {
         background-color: $dark;
         color: white;
-        transition: 0.4s;
+        transition: background-color 0.4s;
+        transition: color 0.4s;
     }
 }
 
@@ -32,10 +33,7 @@ body {
         align-items: center;
     }
 
-    .logo p {
-        font-weight: 700;
-        font-size: 36px;
-        color: $pink;
+    .logo * {
         margin: 0 0 0 20px;
     }
 
@@ -74,7 +72,7 @@ body {
         }
         a:hover {
             background-color: $pink;
-            transition: 0.4s;
+            transition: background-color 0.4s;
         }
     }
 }
@@ -93,7 +91,8 @@ body {
     a:hover {
         background-color: $dark;
         color: white;
-        transition: 0.4s;
+        transition: background-color 0.4s;
+        transition: color 0.4s;
     }
 }
 
@@ -135,7 +134,8 @@ body {
         a:hover {
             background-color: white;
             color: $dark;
-            transition: 0.4s;
+            transition: background-color 0.4s;
+            transition: color 0.4s;
         }
     }
 }

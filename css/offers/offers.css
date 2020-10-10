@@ -9,28 +9,38 @@ a {
   padding-top: 80px;
   padding-bottom: 80px;
   width: 100%;
-  margin: 0 auto; }
-  .offers .inside-offers {
-    margin: 0 auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 60%; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .offers h1 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;
-    margin: 0 0 38px 38px; }
+    margin-left: 30px;
+    margin-bottom: 38px; }
+  .offers .container {
+    max-width: 1110px;
+    width: 100%; }
   .offers .product {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     .offers .product .block {
       background-color: white;
       padding: 25px 0;
-      margin-left: 30px;
-      margin-right: 30px;
-      width: 100%;
+      max-width: 225px;
       text-align: center; }
       .offers .product .block p {
         padding: 0 30px; }

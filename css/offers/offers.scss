@@ -6,29 +6,32 @@
     padding-bottom: 80px;
     width: 100%;
     margin: 0 auto;
-
-    .inside-offers {
-        margin: 0 auto;
-        justify-content: center;
-        width: 60%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         font-size: 24px;
         font-weight: 700;
         line-height: 28.13px;
-        margin: 0 0 38px 38px
+        margin-left: 30px;
+        margin-bottom: 38px;
+    }
+
+    .container {
+        max-width: 1110px;
+        width: 100%;
     }
 
     .product {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         .block {
             background-color: white;
             padding: 25px 0;
-            margin-left: 30px;
-            margin-right: 30px;
-            width: 100%;
+            max-width: 225px;
             text-align: center;
 
             p {

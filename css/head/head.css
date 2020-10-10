@@ -24,9 +24,12 @@ body {
   .hair a:hover {
     background-color: #333333;
     color: white;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s; }
+    -webkit-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
 
 .head {
   display: -webkit-box;
@@ -48,10 +51,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .head .logo p {
-    font-weight: 700;
-    font-size: 36px;
-    color: #F13C6E;
+  .head .logo * {
     margin: 0 0 0 20px; }
   .head .search {
     background-color: #EFEFEF;
@@ -82,9 +82,9 @@ body {
     padding: 12px 26px 13px 27px; }
   .head .contact a:hover {
     background-color: #F13C6E;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s; }
+    -webkit-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s; }
 
 .services {
   display: -webkit-box;
@@ -102,9 +102,12 @@ body {
   .services a:hover {
     background-color: #333333;
     color: white;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s; }
+    -webkit-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s; }
 
 .super-chair {
   background-image: url(../../image/bg_super_chair.png);
@@ -143,6 +146,9 @@ body {
     .super-chair div a:hover {
       background-color: white;
       color: #333333;
-      -webkit-transition: 0.4s;
-      -o-transition: 0.4s;
-      transition: 0.4s; }
+      -webkit-transition: background-color 0.4s;
+      -o-transition: background-color 0.4s;
+      transition: background-color 0.4s;
+      -webkit-transition: color 0.4s;
+      -o-transition: color 0.4s;
+      transition: color 0.4s; }
