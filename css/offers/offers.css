@@ -69,7 +69,8 @@ a {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 100px; }
     .offers .bonus .gifs,
     .offers .bonus .store-map {
       display: -webkit-box;
@@ -140,3 +141,17 @@ a {
     .offers .bonus .store-map p {
       max-width: 141px;
       width: 100%; }
+  .offers .impuls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .offers .impuls div {
+      max-width: 157.5px;
+      width: 100%;
+      background-color: white;
+      padding: 35px 60px; }

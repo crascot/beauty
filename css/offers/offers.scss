@@ -64,6 +64,7 @@
     .bonus {
         @include flex;
         justify-content: space-between;
+        margin-bottom: 100px;
 
         .gifs,
         .store-map {
@@ -130,6 +131,18 @@
         .store-map p {
             max-width: 141px;
             width: 100%;
+        }
+    }
+
+    .impuls {
+        @include flex;
+        justify-content: space-between;
+
+        div {
+            max-width: 157.5px;
+            width: 100%;
+            background-color: white;
+            padding: 35px 60px;
         }
     }
 }
