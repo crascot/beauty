@@ -36,8 +36,11 @@ body {
         align-items: center;
     }
 
-    .logo * {
-        margin: 0 0 0 20px;
+    .logo {
+        @include flex;
+        justify-content: space-between;
+        max-width: 258px;
+        width: 100%;
     }
 
     .search {

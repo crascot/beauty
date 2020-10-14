@@ -54,8 +54,17 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .head .logo * {
-    margin: 0 0 0 20px; }
+  .head .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 258px;
+    width: 100%; }
   .head .search {
     background-color: #EFEFEF;
     border-radius: 40px;
