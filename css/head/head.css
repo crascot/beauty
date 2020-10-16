@@ -40,7 +40,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
   max-width: 1190px;
   width: 100%;
   margin: 0 auto;
@@ -63,8 +63,10 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    max-width: 258px;
+    max-width: 278px;
     width: 100%; }
+    .head .logo * {
+      margin-right: 20px; }
   .head .search {
     background-color: #EFEFEF;
     border-radius: 40px;
@@ -127,6 +129,7 @@ body {
   background-image: url(../../image/bg_super_chair.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,14 +137,12 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 604px; }
-  .super-chair div * {
+  .super-chair * {
     color: white; }
   .super-chair div {
     line-height: 50px;
     max-width: 308px;
-    min-width: 108px;
-    position: relative;
-    left: 405px; }
+    min-width: 108px; }
     .super-chair div h1 {
       font-size: 48px;
       font-weight: 700; }
@@ -166,3 +167,64 @@ body {
       -webkit-transition: color 0.4s;
       -o-transition: color 0.4s;
       transition: color 0.4s; }
+
+@media (max-width: 967px) {
+  .head {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media (max-width: 951px) {
+  .services a {
+    padding: 15px 25px; } }
+
+@media (max-width: 771px) {
+  .services a {
+    padding: 15px; } }
+
+@media (max-width: 651px) {
+  .services a {
+    padding: 15px 10px; } }
+
+@media (max-width: 616px) {
+  .hair a {
+    padding: 10px 20px; } }
+
+@media (max-width: 610px) {
+  .head {
+    padding: 15px 0; }
+    .head .search {
+      margin-left: 0; } }
+
+@media (max-width: 591px) {
+  .services a {
+    padding: 15px 5px; } }
+
+@media (max-width: 531px) {
+  .head div:not(.logo) {
+    margin: 10px 0; }
+  .services a {
+    text-align: center;
+    width: 30%;
+    padding: 15px 0; } }
+
+@media (max-width: 516px) {
+  .hair a {
+    padding: 15px 10px; } }
+
+@media (max-width: 416px) {
+  .hair a {
+    padding: 15px 20px; } }
+
+@media (max-width: 395px) {
+  .services a {
+    width: 40%; } }
+
+@media (max-width: 356px) {
+  .contact {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .contact p {
+      margin-left: 40px;
+      text-align: center; } }
