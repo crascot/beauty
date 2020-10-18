@@ -1,0 +1,93 @@
+@import "../styles/styles.scss";
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-top: 30px;
+    max-width: 1110px;
+    width: 100%;
+
+    .footer-top {
+        @include flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;
+
+        .social-network {
+            @include flex;
+            justify-content: space-between;
+            max-width: 236px;
+            width: 100%;
+
+            div {
+                border: 2px solid $pink;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+
+                svg {
+                    height: inherit;
+                    margin: 0 auto;
+                }
+
+                div:hover {
+                    background-color: $pink;
+                }
+            }
+        }
+
+        .adress p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .number {
+            @include flex;
+            justify-content: space-between;
+            max-width: 337px;
+            width: 100%;
+
+            p {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            a {
+                display: block;
+                border: 2px solid $pink;
+                color: $black;
+                border-radius: 40px;
+                line-height: 26px;
+                padding: 12px 26px 13px 27px;
+            }
+
+            a:hover {
+                background-color: $pink;
+                transition: background-color 0.4s;
+                color: white;
+                transition: color 0.4s;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    @include flex;
+    justify-content: center;
+    background-color: $gray;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+
+    .container {
+        @include flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+}

@@ -7,7 +7,6 @@ a {
 .offers {
   background-color: #EFEFEF;
   padding-top: 80px;
-  padding-bottom: 80px;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -35,11 +34,11 @@ a {
       flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-bottom: 100px; }
       .offers .container .product .block {
         background-color: white;
         padding: 25px 0;
-        margin-bottom: 100px;
         max-width: 225px;
         text-align: center; }
         .offers .container .product .block p {
@@ -69,7 +68,8 @@ a {
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 100px; }
     .offers .bonus .gifs,
     .offers .bonus .store-map {
       display: -webkit-box;
@@ -140,3 +140,18 @@ a {
     .offers .bonus .store-map p {
       max-width: 141px;
       width: 100%; }
+  .offers .impuls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 80px; }
+    .offers .impuls div {
+      max-width: 157.5px;
+      width: 100%;
+      background-color: white;
+      padding: 35px 60px; }

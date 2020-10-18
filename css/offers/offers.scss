@@ -3,7 +3,6 @@
 .offers {
     background-color: $gray;
     padding-top: 80px;
-    padding-bottom: 80px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -24,11 +23,11 @@
         .product {
             @include flex;
             justify-content: space-between;
+            margin-bottom: 100px;
     
             .block {
                 background-color: white;
                 padding: 25px 0;
-                margin-bottom: 100px;
                 max-width: 225px;
                 text-align: center;
     
@@ -64,6 +63,7 @@
     .bonus {
         @include flex;
         justify-content: space-between;
+        margin-bottom: 100px;
 
         .gifs,
         .store-map {
@@ -130,6 +130,19 @@
         .store-map p {
             max-width: 141px;
             width: 100%;
+        }
+    }
+
+    .impuls {
+        @include flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        div {
+            max-width: 157.5px;
+            width: 100%;
+            background-color: white;
+            padding: 35px 60px;
         }
     }
 }
