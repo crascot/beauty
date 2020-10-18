@@ -19,6 +19,7 @@
     .container {
         max-width: 1110px;
         width: 100%;
+        margin: 0 30px;
 
         .product {
             @include flex;
@@ -144,5 +145,60 @@
             background-color: white;
             padding: 35px 60px;
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .bonus {
+        margin-bottom: -20px;
+    }
+    .bonus div {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .offers .container {
+        max-width: 600px;
+    }
+
+    .block {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 614px) {
+    .impuls div {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 509px) {
+    h1 {
+        text-align: center;
+    }
+    div {
+        margin: 0 auto;
+    }
+
+    .bonus div * {
+        padding-left: 15px;
+        text-align: left;
+    }
+    .offers {
+        padding-top: 10px;
+    }
+    .offers h1 {
+        margin: 20px 0 10px 0;
+    }
+    .offers .container .product {
+        margin-bottom: 40px;
+    }
+    .offers .bonus {
+        margin-bottom: 40px;
+    }
+    .offers .impuls {
+        margin-bottom: 30px;
     }
 }
