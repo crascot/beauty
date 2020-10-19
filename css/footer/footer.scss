@@ -1,4 +1,4 @@
-@import "../styles/styles.scss";
+@import "../variables";
 
 .footer {
     width: 100%;
@@ -89,5 +89,35 @@
         @include flex;
         justify-content: space-between;
         padding: 0;
+    }
+}
+
+@media (max-width: $laptop) {
+    .footer-bottom .container p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: $tablet4) {
+    .footer-top {
+        margin: 0;
+    }
+    .footer-top div {
+        margin: 0 auto;
+    }
+
+    .footer-top .number {
+        margin-top: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: $mobile6) {
+    .footer-top .adress {
+        margin-top: 15px;
     }
 }

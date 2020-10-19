@@ -1,0 +1,42 @@
+$black: #000000;
+$dark: #333333;
+$gray: #EFEFEF;
+$pink: #F13C6E;
+
+$desktop1: 1180px;
+$desktop2: 1150px;
+
+$laptop: 1050px;
+
+$tablet1: 990px;
+$tablet2: 967px;
+$tablet3: 951px;
+$tablet4: 799px;
+$tablet5: 771px;
+$tablet6: 651px;
+$tablet7: 616px;
+$tablet8: 614px;
+$tablet9: 610px;
+
+$mobile1: 591px;
+$mobile2: 561px;
+$mobile3: 531px;
+$mobile4: 516px;
+$mobile5: 509px;
+$mobile6: 462px;
+$mobile7: 416px;
+$mobile8: 395px;
+$mobile9: 356px;
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
