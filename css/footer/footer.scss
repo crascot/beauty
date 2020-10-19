@@ -1,4 +1,4 @@
-@import "../styles/styles.scss";
+@import "../variables";
 
 .footer {
     width: 100%;
@@ -92,14 +92,14 @@
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: $laptop) {
     .footer-bottom .container p {
         text-align: center;
         width: 100%;
     }
 }
 
-@media (max-width: 799px) {
+@media (max-width: $tablet4) {
     .footer-top {
         margin: 0;
     }
@@ -116,7 +116,7 @@
     }
 }
 
-@media (max-width: 462px) {
+@media (max-width: $mobile6) {
     .footer-top .adress {
         margin-top: 15px;
     }

@@ -1,4 +1,4 @@
-@import "../styles/styles.scss";
+@import "../variables";
 
 .categories {
     padding-top: 30px;
@@ -44,7 +44,7 @@
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: $desktop1) {
     .categories .container {
         max-width: 750px;
         width: 100%;
@@ -64,7 +64,7 @@
     }
 }
 
-@media (max-width: 561px) {
+@media (max-width: $mobile2) {
     
     .categories .container div {
         margin: 0 auto;
