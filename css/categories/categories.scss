@@ -43,3 +43,30 @@
         }
     }
 }
+
+@media (max-width: 1180px) {
+    .categories .container {
+        max-width: 750px;
+        width: 100%;
+        padding: 0 25px;
+    }
+    .categories .container .popular {
+        text-align: center;
+        margin-top: 40px;
+
+        h1 {
+            margin: 0 auto;
+            padding: 0;
+        }
+        div {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 561px) {
+    
+    .categories .container div {
+        margin: 0 auto;
+    }
+}

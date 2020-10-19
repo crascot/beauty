@@ -91,3 +91,33 @@
         padding: 0;
     }
 }
+
+@media (max-width: 1050px) {
+    .footer-bottom .container p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 799px) {
+    .footer-top {
+        margin: 0;
+    }
+    .footer-top div {
+        margin: 0 auto;
+    }
+
+    .footer-top .number {
+        margin-top: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 462px) {
+    .footer-top .adress {
+        margin-top: 15px;
+    }
+}

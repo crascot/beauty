@@ -52,3 +52,21 @@ a {
           color: #828282;
           width: 100%;
           line-height: 28px; }
+
+@media (max-width: 1180px) {
+  .categories .container {
+    max-width: 750px;
+    width: 100%;
+    padding: 0 25px; }
+  .categories .container .popular {
+    text-align: center;
+    margin-top: 40px; }
+    .categories .container .popular h1 {
+      margin: 0 auto;
+      padding: 0; }
+    .categories .container .popular div {
+      padding: 0; } }
+
+@media (max-width: 561px) {
+  .categories .container div {
+    margin: 0 auto; } }
