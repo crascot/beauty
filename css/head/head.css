@@ -130,6 +130,7 @@ body {
   background-image: url(../../image/bg_super_chair.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,42 +140,77 @@ body {
   height: 604px; }
   .super-chair * {
     color: white; }
-  .super-chair .block {
+  .super-chair img {
+    display: none; }
+  .super-chair .container {
+    width: 100%;
+    margin: 0 auto; }
+    .super-chair .container .block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 700px;
+      width: 100%; }
+      .super-chair .container .block div {
+        line-height: 50px;
+        max-width: 308px; }
+        .super-chair .container .block div h1 {
+          font-size: 48px;
+          font-weight: 700; }
+        .super-chair .container .block div p {
+          font-size: 14px;
+          line-height: 20px; }
+        .super-chair .container .block div a {
+          display: block;
+          border: 2px solid white;
+          text-align: center;
+          border-radius: 40px;
+          max-width: 170px;
+          height: 40px;
+          padding-bottom: 6px;
+          margin-top: 40px; }
+        .super-chair .container .block div a:hover {
+          background-color: white;
+          color: #333333;
+          -webkit-transition: background-color 0.4s;
+          -o-transition: background-color 0.4s;
+          transition: background-color 0.4s;
+          -webkit-transition: color 0.4s;
+          -o-transition: color 0.4s;
+          transition: color 0.4s; }
+
+@media (max-width: 1300px) {
+  .super-chair {
+    background: none;
+    background-color: #F13C6E; }
+  .super-chair img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 700px;
-    width: 100%;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
-    .super-chair .block div {
-      line-height: 50px;
-      max-width: 308px; }
-      .super-chair .block div h1 {
-        font-size: 48px;
-        font-weight: 700; }
-      .super-chair .block div p {
-        font-size: 14px;
-        line-height: 20px; }
-      .super-chair .block div a {
-        display: block;
-        border: 2px solid white;
-        text-align: center;
-        border-radius: 40px;
-        max-width: 170px;
-        height: 40px;
-        padding-bottom: 6px;
-        margin-top: 40px; }
-      .super-chair .block div a:hover {
-        background-color: white;
-        color: #333333;
-        -webkit-transition: background-color 0.4s;
-        -o-transition: background-color 0.4s;
-        transition: background-color 0.4s;
-        -webkit-transition: color 0.4s;
-        -o-transition: color 0.4s;
-        transition: color 0.4s; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    -webkit-transform: translateY(11px);
+    -ms-transform: translateY(11px);
+    transform: translateY(11px); }
+  .super-chair .container .block h1 {
+    display: none; }
+  .super-chair .container .block p {
+    display: none; }
+  .super-chair .container .block div a {
+    width: 170px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 45px; }
+  .super-chair .block {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media (max-width: 967px) {
   .head
@@ -205,9 +241,23 @@ body {
   .search {
     margin: 0 79px 20px 0; } }
 
+@media (max-width: 600px) {
+  .super-chair img {
+    max-width: 540px;
+    width: 100%; } }
+
 @media (max-width: 591px) {
   .services a {
     padding: 15px 5px; } }
+
+@media (max-width: 561px) {
+  .super-chair .container .block div a {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: translateY(-45px);
+    -ms-transform: translateY(-45px);
+    transform: translateY(-45px); } }
 
 @media (max-width: 531px) {
   .face div:not(.logo) {
@@ -224,6 +274,12 @@ body {
 @media (max-width: 516px) {
   .hair a {
     padding: 15px 10px; } }
+
+@media (max-width: 490px) {
+  .super-chair .container .block div a {
+    -webkit-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    transform: translateY(15px); } }
 
 @media (max-width: 416px) {
   .hair a {

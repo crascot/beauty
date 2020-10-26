@@ -115,6 +115,7 @@ body {
     background-image: url(../../image/bg_super_chair.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     height: 604px;
@@ -122,42 +123,86 @@ body {
     * {
         color: white;
     }
+    img {
+        display: none;
+    }
 
-    .block {
-        display: flex;
-        max-width: 700px;
+    .container {
         width: 100%;
-        justify-content: flex-end;
+        margin: 0 auto;
 
-        div {
-            line-height: 50px;
-            max-width: 308px;;
+        .block {
+            display: flex;
+            max-width: 700px;
+            width: 100%;
     
-            h1 {
-                font-size: 48px;
-                font-weight: 700;
-            }
-            p {
-                font-size: 14px;
-                line-height: 20px;
-            }
-            a {
-                display: block;
-                border: 2px solid white;
-                text-align: center;
-                border-radius: 40px;
-                max-width: 170px;
-                height: 40px;
-                padding-bottom: 6px;
-                margin-top: 40px;
-            }
-            a:hover {
-                background-color: white;
-                color: $dark;
-                transition: background-color 0.4s;
-                transition: color 0.4s;
+            div {
+                line-height: 50px;
+                max-width: 308px;;
+        
+                h1 {
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                a {
+                    display: block;
+                    border: 2px solid white;
+                    text-align: center;
+                    border-radius: 40px;
+                    max-width: 170px;
+                    height: 40px;
+                    padding-bottom: 6px;
+                    margin-top: 40px;
+                }
+                a:hover {
+                    background-color: white;
+                    color: $dark;
+                    transition: background-color 0.4s;
+                    transition: color 0.4s;
+                }
             }
         }
+    }
+}
+
+@media (max-width: $desktop1) {
+    .super-chair {
+        background: none;
+        background-color: $pink;
+    }
+
+    .super-chair img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border: 0;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        transform: translateY(11px);
+    }
+
+    .super-chair .container .block  h1 {
+        display: none;
+    }
+    .super-chair .container .block  p {
+        display: none;
+    }
+
+    .super-chair .container .block div a {
+        width: 170px;
+        margin: 0 auto;
+        position: relative;
+        bottom: 45px;
+    }
+
+    .super-chair .block {
+        margin: 0 auto;
+        justify-content: center;
+
     }
 }
 
@@ -199,9 +244,25 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    .super-chair img {
+        max-width: 540px;
+        width: 100%;
+    }
+}
+
 @media (max-width: $mobile1) {
     .services a {
         padding: 15px 5px;
+    }
+}
+
+@media (max-width: $mobile2) {
+    .super-chair .container .block div a {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        transform: translateY(-45px);
     }
 }
 
@@ -226,6 +287,13 @@ body {
         padding: 15px 10px;
     }
 }
+
+@media (max-width: 490px) {
+    .super-chair .container .block div a {
+        transform: translateY(15px);
+    }
+}
+
 @media (max-width: $mobile7) {
     .hair a {
         padding: 15px 20px;
